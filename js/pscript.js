@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const typeRoom = document.getElementById("type_room").value;
 
     try {
-      const response = await fetch(`${API_URL}/Pemesanan`, {
+      const response = await fetch(`${API_URL}/pemesanan`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -116,7 +116,7 @@ document.addEventListener("DOMContentLoaded", function () {
         console.log("Success:", data);
         showSweetAlert(
           "Booking Successful",
-          "Thank you ${full_name} for booking with us!",
+          "Thank you for booking with us!",
           "success"
         );
       } else {
