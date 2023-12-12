@@ -76,7 +76,7 @@ ReedemButton.addEventListener("click", async (e) => {
   }
 });
 
-const API_URL = "https://be-2-bandung-16-production.up.railway.app";
+const API_URL = "https://back-end-production-1871.up.railway.app/";
 
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("pemesanan");

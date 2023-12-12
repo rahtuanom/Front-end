@@ -28,7 +28,7 @@ function showSweetAlert(title, text, icon) {
 	});
   }
   
-  const API_URL = "https://back-end-production-1871.up.railway.app/";
+  const API_URL = "https://back-end-production-1871.up.railway.app";
   
   document.addEventListener("DOMContentLoaded", function () {
 	const form = document.getElementById("contact");
