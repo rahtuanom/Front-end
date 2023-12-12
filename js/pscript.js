@@ -76,7 +76,7 @@ ReedemButton.addEventListener("click", async (e) => {
   }
 });
 
-const API_URL = "https://back-end-production-1871.up.railway.app/";
+const API_URL = "https://be-2-bandung-16-production.up.railway.app";
 
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("pemesanan");
@@ -115,8 +115,8 @@ document.addEventListener("DOMContentLoaded", function () {
         const data = await response.json();
         console.log("Success:", data);
         showSweetAlert(
-          "Yeayy Booking Successful",
-          "THANKYOU ${firstName ${lastName} Booking Rooms has been sent. Check it in the History page Payment via *60PAY: 0895367473629!",
+          "Booking Successful",
+          "Thank you ${full_name} for booking with us!",
           "success"
         );
       } else {
@@ -138,3 +138,12 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+function showSweetAlert(title, text, icon) {
+  return Swal.fire({
+    title: title,
+    text: text,
+    icon: icon,
+    confirmButtonColor: "#645cff",
+  });
+}
