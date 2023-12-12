@@ -99,34 +99,34 @@
                     <img src="images/Resort Overview-1.png" alt="images">
                 </div>
             </div>
-            <div class="contactForm">
+            <form class="contactForm" method="POST" id="contact">
                 <h2>Contact with Us</h2>
                 <div class="formBox">
                     <div class="inputBox w50">
-                        <input type="text" name="" required="">
+                        <input type="text" class="input" required="" id="firstName" name="full_name">
                         <span>First Name</span>
                     </div>
                     <div class="inputBox w50">
-                        <input type="text" required="">
+                        <input type="text" class="input" required="" id="lastName">
                         <span>Last Name</span>
                     </div>
                     <div class="inputBox w50">
-                        <input type="email" required="">
+                        <input type="email" class="input" required="" id="email">
                         <span>Email Address</span>
                     </div>
                     <div class="inputBox w50">
-                        <input type="text" required="">
+                        <input type="number" class="input" required="" id="mobile">
                         <span>Mobile Number</span>
                     </div>
                     <div class="inputBox w100">
-                        <textarea required=""></textarea>
+                        <textarea required="" class="input" id="message"></textarea>
                         <span>Write your message here...</span>
                     </div>
                     <div class="inputBox w100">
-                        <input type="submit" value="Send">
+                        <input type="submit" value="Send" class="btn">
                     </div>
                 </div>
-            </div>
+            </form>
         </div>
     </section>
     <!-- footer -->

@@ -59,22 +59,6 @@ var swiper = new Swiper(".room-slider", {
         },
     },
 });
-//! Responsive Navigation BAR 🎉
-const showMobileNav = () => {
-  var navbar = document.getElementById("navbar");
-  navbar.className === "navibar" ? navbar.className += " responsive" : navbar.className = "navibar"
-}
-
-//! Notification Bell 
-const notification = (pack) => {
-    alert('notification checking..., please click OK to continue')
-    return new Promise((success, failed) => {
-        if (pack != "starterpack") failed("your pack is not starterpack, please read the notes on js file")
-        setTimeout(() => {
-            success("Notification Success! 👏")
-        }, 1200)
-    })
-}
 
 //! asynchronous trigger for notification bell
 async function showPopup(params) {
