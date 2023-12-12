@@ -28,11 +28,6 @@ function showSweetAlert(title, text, icon) {
 	});
   }
   
-  const CodeForm = document.getElementById("code-form");
-  const ReedemButton = document.getElementById("code-form-submit");
-  const CodeAccMsg = document.getElementById("code-acc-msg");
-  
- 
   const API_URL = "https://back-end-production-1871.up.railway.app/";
   
   document.addEventListener("DOMContentLoaded", function () {

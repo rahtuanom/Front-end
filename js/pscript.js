@@ -51,6 +51,14 @@ var swiper = new Swiper(".room-slider", {
   },
 });
 
+function showSweetAlert(title, text, icon) {
+  return Swal.fire({
+    title: title,
+    text: text,
+    icon: icon,
+    confirmButtonColor: "#645cff",
+  });
+}
 
 const CodeForm = document.getElementById("code-form");
 const ReedemButton = document.getElementById("code-form-submit");
@@ -107,9 +115,9 @@ document.addEventListener("DOMContentLoaded", function () {
         const data = await response.json();
         console.log("Success:", data);
         showSweetAlert(
-          "Booking Successful",
-          "THANKYOU ${firstName ${lastName} Booking Rooms has been sent. Check it in the History page. Payment via *60PAY: 0895367473629",
-          "Payment via *60PAY: 0895367473629",
+          "Yeayy Booking Successful",
+          "THANKYOU ${firstName ${lastName} Booking Rooms has been sent. Check it in the History page Payment via *60PAY: 0895367473629!",
+          "success"
         );
       } else {
         const errorData = await response.json();
@@ -131,11 +139,11 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-function showSweetAlert() {
-  return Swal({
-    title: "Booking Successful",
-    Text: "THANKYOU ${firstName ${lastName} Booking Rooms has been sent. Check it in the History page",
-    Text: "Payment via *60PAY: 0895367473629",
+function showSweetAlert(title, text, icon) {
+  return Swal.fire({
+    title: title,
+    text: text,
+    icon: icon,
     confirmButtonColor: "#645cff",
   });
 }
