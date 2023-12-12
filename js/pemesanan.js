@@ -49,8 +49,8 @@ document.addEventListener("DOMContentLoaded", function () {
         })
         .then((data) => {
           showSweetAlert(
-            "Success",
-            "Booking Rooms has been sent. Check it in the History page",
+            "Yeayy Success",
+            "THANKYOUT! ${}Booking Rooms has been sent. Check it in the History page",
             "success",
           ).then(() => {
             //setelah sukses arahkan ke home
@@ -67,14 +67,13 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
   
-    function showSweetAlert(title, text, icon) {
-      return Swal.fire({
-        title: title,
-        text: text,
-        icon: icon,
+    function showSweetAlert() {
+      return Swal({
+        title: "Booking Successful",
+        Text: "THANKYOU ${firstName ${lastName} Booking Rooms has been sent. Check it in the History page",
+        Text: "Payment via *60PAY: 0895367473629",
         confirmButtonColor: "#645cff",
-   // disini untuk ubah tulisan
-     });
+      });
     }
   });
   
