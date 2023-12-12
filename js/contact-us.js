@@ -43,7 +43,7 @@ function showSweetAlert(title, text, icon) {
 	  const message = document.getElementById("message").value;
 	    
 	  try {
-		const response = await fetch(`${API_URL}/contact`, {
+		const response = await fetch(`${API_URL}/Contactus`, {
 		  method: "POST",
 		  headers: {
 			"Content-Type": "application/json",

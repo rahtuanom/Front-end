@@ -76,7 +76,7 @@ ReedemButton.addEventListener("click", async (e) => {
   }
 });
 
-const API_URL = "https://back-end-production-1871.up.railway.app/";
+const API_URL = "https://back-end-production-1871.up.railway.app";
 
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("pemesanan");
@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const typeRoom = document.getElementById("type_room").value;
 
     try {
-      const response = await fetch(`${API_URL}/pemesanan`, {
+      const response = await fetch(`${API_URL}/Pemesanan`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
